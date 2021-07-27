@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>penguine</title>
+    <!-- link bootstrap -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- header a only banner or background color dibe . er width 100% hobe. so ekhane r kichu change kora jabe na  -->
+    <header class="bg-yellow-100">
+        <!-- space around dite hobe all time. content r model side by side rakhar jonno figma thke er jonno height width copy kora jabe na oitate jhamela hoy taile. but paddy top or bottom er jonno figma er man deya jay. and flex header a kora jabe na er section create kore then oikhane kora lagbe   -->
+       <section class="container lg:flex justify-around items-center py-12">
+           <!-- to space between two child in a parent ,use space class not margin .its revoling to code like noob -->
+           <div class="space-y-4">
+             <div h1 class="uppercase text-7xl  font-bold"> 
+                 <!-- whenever you see a  heading is in two lines .always use span for each halves  -->
+                 <span class="text-yellow-400">BE the penguine</span>
+                 <!-- break diye alada kora lagbe . duita h1 diya na(ager bar ei bhul korchilam) -->
+                 <br> 
+                 <span>of water</span>
+             </div>
+             <!-- 2/3 means,it only takes 66% of original width -->
+                <p class="w-2/3">Lorem Ipsum is simply dummy text of the printing 
+                and typesetting industry.</p>
+                
+                <button class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-green-400	 rounded-xl py-4 px-7 uppercase">
+                    <!-- buy now er age icon boshbe and icon er class ta inline hobe -->
+                 <svg
+                    xmlns="http://www.w3.org/2000/svg" class="inline h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg> Buy Now</button>
+
+           </div>
+           <div >
+            
+               <img src="images/model.png" alt="">
+           </div>
+       </section>
+    </header>
+    <main>
+        <!-- woman card -->
+        <section class="px-8 mx-auto my-12">
+           <h1 class="uppercase text-3xl text-gray-600 font-bold mb-4">Woman Jacket</h1> 
+           <!-- can use flex or grid .but grid is considered mostly -->
+           <div class="grid grid-cols-3">
+               <div class="rounded-3xl shadow-xl p-4 space-y-4 ">
+                   <div class="bg-gray-300 rounded-3xl p-1">
+                     <img src="images/jacket-1.png" alt=""> 
+                   </div>
+
+                
+                 <h2 class="text-2xl text-gray-500 font-bold" >Yello Coat Jacket</h2>
+                 <p class="w-2/3">Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry.</p>
+
+                 <div class="flex justify-between items-center">
+                     <h1 class="text-3xl font-black text-yellow-300"> $234
+
+                     </h1>
+                     <button class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-green-400	 rounded-xl py-4 px-7 uppercase">
+                        <!-- buy now er age icon boshbe and icon er class ta inline hobe -->
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg" class="inline h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg> Buy Now</button>
+
+                 </div>   
+               </div>
+               <div class="rounded-3xl shadow-xl p-4 space-y-4 ">
+                   <div class="bg-gray-300 rounded-3xl p-1">
+                     <img src="images/jacket-2.png" alt=""> 
+                   </div>
+
+                
+                 <h2 class="text-2xl text-gray-500 font-bold" >Yello Coat Jacket</h2>
+                 <p class="w-2/3">Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry.</p>
+
+                 <div class="flex justify-between items-center">
+                     <h1 class="text-3xl font-black text-yellow-300"> $234
+
+                     </h1>
+                     <button class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-green-400	 rounded-xl py-4 px-7 uppercase">
+                        <!-- buy now er age icon boshbe and icon er class ta inline hobe -->
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg" class="inline h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg> Buy Now</button>
+
+                 </div>   
+               </div>
+               <div class="rounded-3xl shadow-xl p-4 space-y-4 ">
+                   <div class="bg-gray-300 rounded-3xl p-1">
+                     <img src="images/jacket-3.png" alt=""> 
+                   </div>
+
+                
+                 <h2 class="text-2xl text-gray-500 font-bold" >Yello Coat Jacket</h2>
+                 <p class="w-2/3">Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry.</p>
+
+                 <div class="flex justify-between items-center">
+                     <h1 class="text-3xl font-black text-yellow-300"> $234
+
+                     </h1>
+                     <button class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-green-400	 rounded-xl py-4 px-7 uppercase">
+                        <!-- buy now er age icon boshbe and icon er class ta inline hobe -->
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg" class="inline h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg> Buy Now</button>
+
+                 </div>   
+               </div>
+               
+           </div>
+
+
+
+
+
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
